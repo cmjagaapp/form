@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>JaGaRaya Image Generation Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<form style="font-family: Gotham Rounded, Arial, sans-serif;">
+  <div class="form-group">
+    <div>
+      <input type="text" placeholder="Your Greeting Message" maxlength="90" id="user-message" name="user-message">
+      <div class="character-counter"><span id="char-count">0/90</span></div>
+    </div>
+  </div>
+  <div class="generate-container">
+    <button id="generate-image-button">Generate</button>
+    <div id="loading-spinner"></div>
+  </div>
+</form>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

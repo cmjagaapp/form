@@ -1,0 +1,94 @@
+button {
+  padding: 10px 20px;
+  background-color: #254b29;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.4s ease-out;
+    animation: breath-pulse 2s infinite linear;
+}
+
+@keyframes breath-pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+button:hover {
+  color: #254b29;
+  background-color: #ffffff;
+  border: 1px solid #254b29;
+}
+
+input[type="text"],
+textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  resize: vertical;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+}
+
+textarea {
+  height: 150px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 340px;
+}
+
+.character-counter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999;
+}
+
+.wrapper {
+  max-width: 10%;
+  margin: auto;
+  background-color: transparent;
+  height: 20px;
+  width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.generate-container {
+  display: flex;
+  align-items: center;
+}
+
+#generate-image-button {
+  margin-right: 10px;
+}
+
+#loading-spinner {
+  width: 30px;
+  height: 30px;
+  background-image: url('https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  visibility: hidden;
+}
