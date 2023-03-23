@@ -11,7 +11,7 @@ generateImageButton.addEventListener('click', (event) => {
 
   const image = new Image();
   image.crossOrigin = 'anonymous'; // Set the crossOrigin attribute to allow loading from a different domain
-  image.src = 'https://i.ibb.co/GCJFvhw/Greeting-Card-Temp.jpg';
+  image.src = 'https://i.ibb.co/NxgJ7Pq/Greeting-Card-Temp.jpg';
 
   loadingSpinner.style.visibility = 'visible';
 
