@@ -78,10 +78,12 @@ form {
 .generate-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 #generate-image-button {
-  margin-right: 10px;
+  margin-right: 0px;
 }
 
 #loading-spinner {
@@ -91,4 +93,6 @@ form {
   background-size: contain;
   background-repeat: no-repeat;
   visibility: hidden;
-}
+  position: absolute;
+  left: calc(100% + 10px);
+} 
